@@ -1,0 +1,11 @@
+[package]
+name = "aes-rust"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+rust-crypto = "0.2"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
