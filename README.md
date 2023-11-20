@@ -48,7 +48,7 @@ The use of Dhat for Rust programs and VTune Profiler for C++ applications enable
 
 # DES Implementation
 
-## Execution Time:
+## Execution Time(Profiler):
 
 ### C++ (3.23s) vs. Rust (3.51s):
 The slightly longer execution time in Rust may be attributed to Rust's focus on safety, which introduces additional checks and overhead, impacting raw performance compared to C++.
@@ -72,7 +72,7 @@ The compressed size discrepancy may result from differences in compiler optimiza
 ### Conclusion:
 Compiler optimization strategies and binary characteristics contribute to the compressed size difference.
 
-## CPU Seconds:
+## CPU Seconds(Profiler):
 
 ### C++ (12.80s) vs. Rust (13.93s):
 The increased CPU seconds in Rust align with the longer execution time, indicating that Rust's additional safety features may result in higher CPU utilization.
@@ -82,7 +82,7 @@ The correlation between CPU seconds and execution time suggests that Rust's safe
 
 # AES Implementation
 
-## Execution Time:
+## Execution Time(Profiler):
 
 ### C++ (14.04s) vs. Rust (7.21s):
 The substantial difference in execution time indicates a significant performance gap between C++ and Rust for the AES algorithm.
@@ -106,7 +106,7 @@ The compressed size difference may be influenced by compiler optimizations, lang
 ### Conclusion:
 Compiler optimizations and binary characteristics contribute to the compressed size variance.
 
-## CPU Seconds:
+## CPU Seconds(Profiler):
 
 ### C++ (14.04s) vs. Rust (28.34s):
 The significantly higher CPU seconds in Rust for the AES algorithm align with the longer execution time, indicating the impact of Rust's safety features on CPU utilization.
