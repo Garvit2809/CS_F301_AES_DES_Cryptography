@@ -60,12 +60,11 @@ The use of Dhat for Rust programs and VTune Profiler for C++ applications enable
 2. Navigate to the project directory.
 3. Build and run the Rust implementation using the provided instructions.
 4. Repeat the process for the C++ implementation.
+![aes_cpp](https://github.com/Garvit2809/CS_F301_AES_DES_Cryptography/assets/84657981/29adf565-9042-471b-9c4d-c832c85fbd4a)
+![aes_rust](https://github.com/Garvit2809/CS_F301_AES_DES_Cryptography/assets/84657981/3b57d0ad-ec2b-4abe-a179-bbd002845766)
+![des_cpp](https://github.com/Garvit2809/CS_F301_AES_DES_Cryptography/assets/84657981/88218f9f-9a84-4e9f-b854-56c3f3a9f46d)
+![des_rust](https://github.com/Garvit2809/CS_F301_AES_DES_Cryptography/assets/84657981/9297798f-ce0a-404c-967b-1006f66f0d1d)
 
-### Encryption
-- Input hexadecimal data for encryption.
-- Choose a presentation format for the encoded data.
-
-- ![aes_cpp](https://github.com/Garvit2809/CS_F301_AES_DES_Cryptography/assets/84657981/be4640b0-b22e-4bc8-98a2-1db8158b5ba5)
 
 
 ### Decryption
