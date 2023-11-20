@@ -128,6 +128,23 @@ The higher CPU utilization in Rust aligns with its longer execution time, reflec
 
 These observations emphasize the trade-offs between safety and raw performance inherent in the design and execution of cryptographic algorithms in Rust and C++
 
+# Relation with the course 
+
+## 1. Memory Safety and Ownership in Rust
+Rust's emphasis on memory safety, driven by its ownership system and borrow checker, significantly influences the implementation of both AES and DES. The ownership system ensures that cryptographic operations are conducted without the risk of common vulnerabilities such as buffer overflows. This is particularly critical in the context of cryptographic algorithms where low-level operations demand precision and robust memory management. The borrow checker guarantees the validity of references, mitigating memory-related errors. The meticulous handling of memory in Rust contributes not only to the security of the implementation but also to the predictability of memory usage.
+
+## 2. Performance Optimization in C++
+C++'s focus on performance optimization becomes evident in the execution of cryptographic algorithms, especially with the resource-intensive AES algorithm. The language provides fine-grained control over low-level details, allowing for manual memory management and optimization tailored to the computational complexities of cryptographic operations. In the context of AES, where intricate mathematical operations are prevalent, C++ empowers developers to fine-tune the code for optimal execution. The numbers attest to this, showcasing C++'s prowess in handling computationally intensive tasks with a balance of speed and efficiency.
+
+## 3. Strong Typing and Security in Rust
+Rust's strong typing plays a crucial role in ensuring the consistency and correctness of data handling in cryptographic implementations. The emphasis on strong typing minimizes the risk of unintended data manipulations, aligning with the project's commitment to security. The AES and DES algorithms benefit from Rust's type system, as it prevents type-related errors that could compromise the integrity of the cryptographic operations. While Rust introduces an additional layer of type safety, the implementation demonstrates that this does not come at the expense of performance, as evidenced by competitive execution times.
+
+## 4. Ownership, Borrowing, and Concurrency in Rust
+The application of Rust's ownership and borrowing principles extends beyond memory safety. In the context of cryptographic algorithms, ownership and borrowing contribute to safe concurrency. The AES and DES implementations in Rust are inherently equipped to handle parallel processing, ensuring that data races do not compromise the security and correctness of the cryptographic operations. Rust's ownership system shines as a powerful ally in maintaining thread safety without sacrificing the performance needed for efficient encryption and decryption.
+
+## 5. Benchmarking and Profiling
+The project incorporates benchmarking and profiling tools to quantitatively assess the performance characteristics of both C++ and Rust implementations. Profilers such as Dhat and VTune Profiler allow us to delve into the memory utilization, CPU usage, and execution times. These numbers are not just metrics; they are a reflection of the impact of language choices on the real-world execution of cryptographic algorithms. The benchmarks serve as tangible proof points, validating the effectiveness of language-specific features and optimizations in achieving the project's goals.
+
 ## Cryptographic Tool Features
 
 ### Encryption
