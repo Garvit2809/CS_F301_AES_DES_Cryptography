@@ -1,9 +1,12 @@
 # Cryptographic Tool - Rust and C++ Implementation (AES and DES)
 
-Garvit Arora 2020B2A72113G: f20202113@goa.bits-pilani.ac.in
-Tanmay Satija 2020B3A71516G: f20201516@goa.bits-pilani.ac.in
-Shreyash Patel 2020B5A71157G: f20201157@goa.bits-pilani.ac.in
-Siddhant Budhiraja 2020B3A71799G: f20201799@goa.bits-pilani.ac.in
+###Garvit Arora 2020B2A72113G: f20202113@goa.bits-pilani.ac.in
+
+###Tanmay Satija 2020B3A71516G: f20201516@goa.bits-pilani.ac.in
+
+###Shreyash Patel 2020B5A71157G: f20201157@goa.bits-pilani.ac.in
+
+###Siddhant Budhiraja 2020B3A71799G: f20201799@goa.bits-pilani.ac.in
 
 ## Aim
 
@@ -31,6 +34,16 @@ Unit tests cover individual cryptographic functions, ensuring their correctness.
 
 ### Database
 Given the cryptographic nature, no database integration is necessary. The primary focus is on the efficiency and security of the encryption and decryption processes.
+
+# Profiler Comparison
+
+### Dhat (Memory Profiler)
+Dhat serves as the memory profiler, profiling Rust programs and tracking dynamic memory allocations and deallocations. Its insights into memory usage aid in identifying memory leaks and inefficiencies.
+
+### VTune Profiler (Performance Analysis)
+VTune Profiler is harnessed to analyze C++ applications, offering comprehensive performance analysis capabilities. It encompasses CPU and memory analysis, thread profiling, and other metrics, providing a detailed understanding of the performance characteristics of the C++ implementation.
+
+The use of Dhat for Rust programs and VTune Profiler for C++ applications enables a nuanced assessment of both memory and performance aspects in each language effectively.
 
 
 # DES Implementation
@@ -148,15 +161,6 @@ For encryption, the code conducts initial permutation, splitting the message, 16
 ### DES Decryption
 Decryption involves reversing the encryption process with initial permutation, splitting, 16 rounds of decryption using the round keys in reverse order, and final permutation. The plaintext result is converted to a hexadecimal string and displayed.
 
-## Profiler Comparison
-
-### Dhat (Memory Profiler)
-Dhat serves as the memory profiler, profiling Rust programs and tracking dynamic memory allocations and deallocations. Its insights into memory usage aid in identifying memory leaks and inefficiencies.
-
-### VTune Profiler (Performance Analysis)
-VTune Profiler is harnessed to analyze C++ applications, offering comprehensive performance analysis capabilities. It encompasses CPU and memory analysis, thread profiling, and other metrics, providing a detailed understanding of the performance characteristics of the C++ implementation.
-
-The use of Dhat for Rust programs and VTune Profiler for C++ applications enables a nuanced assessment of both memory and performance aspects in each language effectively.
 
 ## How to Use
 
