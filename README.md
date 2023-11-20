@@ -1,5 +1,10 @@
 # Cryptographic Tool - Rust and C++ Implementation (AES and DES)
 
+Garvit Arora 2020B2A72113G: f20202113@goa.bits-pilani.ac.in
+Tanmay Satija 2020B3A71516G: f20201516@goa.bits-pilani.ac.in
+Shreyash Patel 2020B5A71157G: f20201157@goa.bits-pilani.ac.in
+Siddhant Budhiraja 2020B3A71799G: f20201799@goa.bits-pilani.ac.in
+
 ## Aim
 
 The primary objective of this project is to develop a versatile encryption/decryption tool capable of encoding hexadecimal data into a custom language and deciphering data back into various formats, including hexadecimal code. The implementation leverages both **Rust** and **C++** to explore the differences in their approaches and how these differences impact the functionality and performance of the code. In addition to this, we delve into the variations between **AES** and **DES** encryption and decryption techniques.
@@ -9,6 +14,106 @@ The primary objective of this project is to develop a versatile encryption/decry
 **Cryptography**, the practice and study of secure communication techniques, plays a pivotal role in ensuring the privacy, integrity, and authenticity of information. The primary goal is to establish secure communication in the presence of adversaries, safeguarding data in various applications such as confidentiality, secure communication, data protection, and the **Internet of Things (IoT)**.
 
 While the cryptographic tool may seem simple, it serves as a practical example of encoding messages securely and passing them to recipients who can decode the information using the appropriate decryption key. The simplicity of this project is intentional, allowing for a focused examination of fundamental cryptographic principles and the subtleties introduced by the choice of programming languages.
+
+## Software Architecture
+
+### Overview
+The software adopts a modular architecture with separate implementations for AES and DES in Rust and C++. Each serves as a standalone library, facilitating versatility for integration into various systems. The terminal interface allows user-friendly interaction, enabling input for encryption and observing decrypted output.
+
+### Reusability
+To ensure code consistency, common components like basic bit manipulation and key expansion are shared between Rust and C++ implementations. This design minimizes redundancy, fostering uniformity in fundamental operations.
+
+### Terminal Interaction
+The terminal serves as the primary interface for user interaction, allowing users to input data for encryption and observe decrypted results. This design choice enhances accessibility for users to experiment with cryptographic processes in a straightforward manner.
+
+### Testing Component
+Unit tests cover individual cryptographic functions, ensuring their correctness. Integration tests validate the end-to-end encryption-decryption process. Benchmark testing involves executing algorithms with various input sizes and complexities, comparing Rust and C++ implementations. Benchmarking tools such as Google Benchmark are used for performance analysis.
+
+### Database
+Given the cryptographic nature, no database integration is necessary. The primary focus is on the efficiency and security of the encryption and decryption processes.
+
+
+# DES Implementation
+
+## Execution Time:
+
+### C++ (3.23s) vs. Rust (3.51s):
+The slightly longer execution time in Rust may be attributed to Rust's focus on safety, which introduces additional checks and overhead, impacting raw performance compared to C++.
+
+### Conclusion:
+Rust's emphasis on safety may contribute to a marginal increase in execution time.
+
+## Memory Consumption:
+
+### C++ (10,936 MB) vs. Rust (11,036 MB):
+The negligible difference in memory consumption indicates that both implementations utilize a comparable amount of memory for the DES algorithm.
+
+### Conclusion:
+Similar memory consumption suggests similar memory management strategies in both languages.
+
+## Compressed Size (gz):
+
+### C++ (1528 KB) vs. Rust (1253 KB):
+The compressed size discrepancy may result from differences in compiler optimizations and the inherent characteristics of the generated binaries in C++ and Rust.
+
+### Conclusion:
+Compiler optimization strategies and binary characteristics contribute to the compressed size difference.
+
+## CPU Seconds:
+
+### C++ (12.80s) vs. Rust (13.93s):
+The increased CPU seconds in Rust align with the longer execution time, indicating that Rust's additional safety features may result in higher CPU utilization.
+
+### Conclusion:
+The correlation between CPU seconds and execution time suggests that Rust's safety features impact overall CPU utilization.
+
+# AES Implementation
+
+## Execution Time:
+
+### C++ (14.04s) vs. Rust (7.21s):
+The substantial difference in execution time indicates a significant performance gap between C++ and Rust for the AES algorithm.
+
+### Conclusion:
+Rust's focus on safety may lead to more optimized code generation for the AES algorithm, resulting in faster execution.
+
+## Memory Consumption:
+
+### C++ (10,912 MB) vs. Rust (10,932 MB):
+Similar memory consumption suggests that both implementations utilize comparable resources for the AES algorithm.
+
+### Conclusion:
+Similar memory usage indicates consistent memory management approaches in both languages.
+
+## Compressed Size (gz):
+
+### C++ (1150 KB) vs. Rust (1020 KB):
+The compressed size difference may be influenced by compiler optimizations, language-specific code generation, and inherent characteristics of the binaries.
+
+### Conclusion:
+Compiler optimizations and binary characteristics contribute to the compressed size variance.
+
+## CPU Seconds:
+
+### C++ (14.04s) vs. Rust (28.34s):
+The significantly higher CPU seconds in Rust for the AES algorithm align with the longer execution time, indicating the impact of Rust's safety features on CPU utilization.
+
+### Conclusion:
+Rust's safety features contribute to increased CPU utilization but potentially optimize the algorithm for execution.
+
+# Overall Conclusion:
+
+## DES:
+
+Rust's emphasis on safety may introduce slight overhead, impacting execution time and CPU utilization marginally.
+Similar memory usage indicates consistent memory management in both languages.
+
+## AES:
+
+Rust outperforms C++ in execution time, suggesting that Rust's safety features may lead to optimized code generation for certain cryptographic algorithms.
+The higher CPU utilization in Rust aligns with its longer execution time, reflecting the impact of safety features on overall CPU performance.
+
+These observations emphasize the trade-offs between safety and raw performance inherent in the design and execution of cryptographic algorithms in Rust and C++
 
 ## Cryptographic Tool Features
 
