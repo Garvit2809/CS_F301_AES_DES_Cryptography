@@ -1,12 +1,12 @@
 # Cryptographic Tool - Rust and C++ Implementation (AES and DES)
 
-###Garvit Arora 2020B2A72113G: f20202113@goa.bits-pilani.ac.in
+Garvit Arora 2020B2A72113G: f20202113@goa.bits-pilani.ac.in
 
-###Tanmay Satija 2020B3A71516G: f20201516@goa.bits-pilani.ac.in
+Tanmay Satija 2020B3A71516G: f20201516@goa.bits-pilani.ac.in
 
-###Shreyash Patel 2020B5A71157G: f20201157@goa.bits-pilani.ac.in
+Shreyash Patel 2020B5A71157G: f20201157@goa.bits-pilani.ac.in
 
-###Siddhant Budhiraja 2020B3A71799G: f20201799@goa.bits-pilani.ac.in
+Siddhant Budhiraja 2020B3A71799G: f20201799@goa.bits-pilani.ac.in
 
 ## Aim
 
