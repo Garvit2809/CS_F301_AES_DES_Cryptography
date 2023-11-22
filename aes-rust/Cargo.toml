@@ -1,0 +1,21 @@
+[package]
+name = "aes-rust"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+rust-crypto = "0.2"
+
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[dev-dependencies]
+dhat = "0.3.2"
+
+[profile.release]
+debug = 1
+
+[features]
+dhat-ad-hoc = []  # if you are doing ad hoc profiling
