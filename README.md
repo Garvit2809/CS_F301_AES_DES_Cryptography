@@ -37,13 +37,10 @@ Given the cryptographic nature, no database integration is necessary. The primar
 
 # Profiler Comparison
 
-### Dhat (Memory Profiler)
-Dhat serves as the memory profiler, profiling Rust programs and tracking dynamic memory allocations and deallocations. Its insights into memory usage aid in identifying memory leaks and inefficiencies.
-
 ### VTune Profiler (Performance Analysis)
 VTune Profiler is harnessed to analyze C++ applications, offering comprehensive performance analysis capabilities. It encompasses CPU and memory analysis, thread profiling, and other metrics, providing a detailed understanding of the performance characteristics of the C++ implementation.
 
-The use of Dhat for Rust programs and VTune Profiler for C++ applications enables a nuanced assessment of both memory and performance aspects in each language effectively.
+The use of VTune Profiler for C++ applications enables a nuanced assessment of both memory and performance aspects in each language effectively.
 
 
 # DES Implementation
@@ -56,21 +53,6 @@ The slightly longer execution time in Rust may be attributed to Rust's focus on 
 ### Conclusion:
 Rust's emphasis on safety may contribute to a marginal increase in execution time.
 
-## Memory Consumption:
-
-### C++ (10,936 MB) vs. Rust (11,036 MB):
-The negligible difference in memory consumption indicates that both implementations utilize a comparable amount of memory for the DES algorithm.
-
-### Conclusion:
-Similar memory consumption suggests similar memory management strategies in both languages.
-
-## Compressed Size (gz):
-
-### C++ (1528 KB) vs. Rust (1253 KB):
-The compressed size discrepancy may result from differences in compiler optimizations and the inherent characteristics of the generated binaries in C++ and Rust.
-
-### Conclusion:
-Compiler optimization strategies and binary characteristics contribute to the compressed size difference.
 
 ## CPU Seconds(Profiler):
 
@@ -90,21 +72,6 @@ The substantial difference in execution time indicates a significant performance
 ### Conclusion:
 Rust's focus on safety may lead to more optimized code generation for the AES algorithm, resulting in faster execution.
 
-## Memory Consumption:
-
-### C++ (10,912 MB) vs. Rust (10,932 MB):
-Similar memory consumption suggests that both implementations utilize comparable resources for the AES algorithm.
-
-### Conclusion:
-Similar memory usage indicates consistent memory management approaches in both languages.
-
-## Compressed Size (gz):
-
-### C++ (1150 KB) vs. Rust (1020 KB):
-The compressed size difference may be influenced by compiler optimizations, language-specific code generation, and inherent characteristics of the binaries.
-
-### Conclusion:
-Compiler optimizations and binary characteristics contribute to the compressed size variance.
 
 ## CPU Seconds(Profiler):
 
